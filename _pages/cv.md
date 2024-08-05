@@ -6,33 +6,7 @@ permalink: /cv/
 redirect_from:
   - /resume
 ---
-<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 
-<div id="pdf-viewer" style="width:100%; height:100vh;"></div>
-<script>
-  var url = 'http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf';
-  
-  var pdfjsLib = window['pdfjs-dist/build/pdf'];
-  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
-  
-  var loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then(function(pdf) {
-    pdf.getPage(1).then(function(page) {
-      var scale = 1.5;
-      var viewport = page.getViewport({ scale: scale });
-      
-      var canvas = document.createElement('canvas');
-      var context = canvas.getContext('2d');
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
-      
-      document.getElementById('pdf-viewer').appendChild(canvas);
-      
-      var renderContext = {
-        canvasContext: context,
-        viewport: viewport
-      };
-      page.render(renderContext);
-    });
-  });
-</script>
+<object data="http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf" type="application/pdf" width="100%" height="100%">
+    <p>It appears you don't have a PDF plugin for this browser. No worries,... you can <a href="http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf">click here to download the PDF file.</a></p>
+</object>
