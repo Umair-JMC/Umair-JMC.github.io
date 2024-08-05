@@ -6,6 +6,8 @@ permalink: /cv/
 redirect_from:
   - /resume
 ---
+<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
 <div id="pdf-viewer" style="width:100%; height:100vh;"></div>
 <script>
   var url = 'http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf';
