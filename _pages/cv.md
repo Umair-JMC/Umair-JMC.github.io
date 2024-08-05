@@ -1,40 +1,29 @@
----
-layout: archive
-title: "CV"
-permalink: /cv/
-redirect_from:
-  - /resume
----
+<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+<div id="pdf-viewer" style="width:100%; height:100vh; overflow: hidden;"></div>
+<script>
+  var url = 'http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf';
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    #pdf-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
-</head>
-<body>
-  <div id="pdf-container">
-    <iframe src="http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf" allowfullscreen></iframe>
-  </div>
-</body>
-</html>
+  var pdfjsLib = window['pdfjs-dist/build/pdf'];
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+  var loadingTask = pdfjsLib.getDocument(url);
+  loadingTask.promise.then(function(pdf) {
+    pdf.getPage(1).then(function(page) {
+      var scale = 0.5; // Adjust scale to fit your needs
+      var viewport = page.getViewport({ scale: scale });
+
+      var canvas = document.createElement('canvas');
+      var context = canvas.getContext('2d');
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      document.getElementById('pdf-viewer').appendChild(canvas);
+
+      var renderContext = {
+        canvasContext: context,
+        viewport: viewport
+      };
+      page.render(renderContext);
+    });
+  });
+</script>
