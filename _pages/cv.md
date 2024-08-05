@@ -2,11 +2,17 @@
 layout: archive
 title: "CV"
 permalink: /cv/
-author_profile: true
+# author_profile: true
 redirect_from:
   - /resume
 ---
 
+
+<iframe src="http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf" style="width:100%; height: 100vh; border: none;" allowfullscreen></iframe>
+
+
+
+<!-- 
 {% include base_path %}
 
 Education
@@ -61,4 +67,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
