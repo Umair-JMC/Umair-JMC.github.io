@@ -2,12 +2,39 @@
 layout: archive
 title: "CV"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
 
-
-<object data="http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf" type="application/pdf" width="100%" height="100%">
-    <p>It appears you don't have a PDF plugin for this browser. No worries,... you can <a href="http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf">click here to download the PDF file.</a></p>
-</object>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #pdf-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="pdf-container">
+    <iframe src="http://Umair-JMC.github.io/files/Umair_Academic_CV_August_24.pdf" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
