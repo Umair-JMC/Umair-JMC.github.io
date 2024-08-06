@@ -27,7 +27,7 @@ redirect_from:
 
 <p>I held a Fulbright Scholarship for my PhD and was obligated to spend 2 years in my home country. To fulfil this commitment, I have been working with the Center for Evaluation and Development (C4ED) as an impact evaluation specialist since completing my PhD. In this role, I have conducted experimental and quasi-experimental research across a range of national and international development projects. My work at C4ED has enabled me to apply my research skills in experimental and non-experimental research, producing insights that are both academically rigorous and practically impactful.</p>
 
-<p>I aspire to secure a position that enables me to continue conducting high-impact research that informs policy development and advances equitable and sustainable outcomes for children and families.</p>
+<p>Now that I have completed my contractual obligations to the Fulbright Association, I aspire to secure an academic position that enables me to continue conducting high-impact research that informs policy development and advances equitable and sustainable outcomes for children and families.</p>
 
 </body>
 </html>
